@@ -1,0 +1,419 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0c0c1d;
+  color: lightgray;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button:hover {
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+/* navbar */
+.navbar {
+  height: 100px;
+}
+.wrapper {
+  height: 100%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper span {
+  font-weight: bold;
+}
+.social {
+  display: flex;
+  gap: 15px;
+}
+.social a img {
+  width: 27px;
+}
+/* sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  position: fixed;
+  z-index: 99;
+}
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 400px;
+  background-color: white;
+}
+.links {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.links a {
+  font-size: 40px;
+}
+.sidebar button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: fixed;
+  left: 30px;
+  top: 50px;
+  transform: translateY(-50%);
+  height: 25px;
+  background-color: transparent;
+  border: none;
+}
+
+/* hero */
+.hero {
+  overflow: hidden;
+  height: calc(100vh - 100px);
+  position: relative;
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+}
+.imageContainer {
+  height: 100vh;
+  width: 70%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.textContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  z-index: 50;
+}
+.textContainer h2 {
+  font-size: 30px;
+  color: rebeccapurple;
+  letter-spacing: 8px;
+}
+.textContainer h1 {
+  font-size: 50px;
+}
+.textContainer img {
+  width: 40px;
+}
+.buttons a {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  margin-right: 20px;
+  cursor: pointer;
+  z-index: 33;
+}
+.slidingTextContainer {
+  position: absolute;
+  font-size: 50vh;
+  bottom: -100px;
+  white-space: nowrap;
+  color: #ffffff09;
+  width: 50%;
+}
+/* parallax */
+.parallax {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.parallax h1 {
+  font-size: 70px;
+  margin-top: -150px;
+}
+.parallax .mountains,
+.planets,
+.stars {
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.mountains {
+  background-image: url(/mountains.png);
+  z-index: 4;
+}
+.planets {
+  background-image: url(/planets.png);
+  z-index: 5;
+}
+.stars {
+  background-image: url(/stars.png);
+}
+/* portfolio */
+.portfolio {
+  position: relative;
+}
+.progress {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding-top: 50px;
+  text-align: center;
+  color: orange;
+  font-size: 30px;
+  background-color: #0c0c1d;
+}
+.progressBar {
+  height: 3px;
+  background-color: white;
+}
+
+.portfolioContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.portfolioContainer .Portfoliowrapper {
+  max-width: 1000px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.portfolioImageContainer {
+  flex: 1;
+  height: 50%;
+}
+.portfolioImageContainer img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.PortfoliotextContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.PortfoliotextContainer h2 {
+  font-size: 40px;
+}
+.PortfoliotextContainer p {
+  color: gray;
+  font-size: 17px;
+}
+.PortfoliotextContainer button {
+  background-color: orange;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+}
+/* contact */
+.contact {
+  position: relative;
+  height: 100%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.contactTextContainer {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contactTextContainer h1 {
+  font-size: 60px;
+  line-height: 80px;
+}
+.contactTextContainer span {
+  font-weight: 400;
+}
+.formContainer {
+  flex: 1;
+  position: relative;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input,
+textarea {
+  padding: 20px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+}
+form button {
+  background-color: orange;
+  padding: 17px;
+  border: none;
+  font-weight: 500;
+}
+.phoneSvg {
+  position: absolute;
+  margin: auto;
+  stroke: orange;
+  z-index: -1;
+}
+
+/* cursor */
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: fixed;
+  z-index: 999;
+}
+
+@media (max-width: 738px) {
+  .cursor,
+  .wrapper span {
+    display: none;
+  }
+  .wrapper {
+    justify-content: flex-end;
+    padding: 0px 20px;
+  }
+  .bg {
+    width: 200px;
+  }
+  .links a {
+    font-size: 30px;
+  }
+  .textContainer {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    height: 90%;
+  }
+  .textContainer h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .imageContainer {
+    height: 50%;
+    width: 100%;
+    top: unset;
+    bottom: 0;
+  }
+  .imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .parallax h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+  .parallax .mountains {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  .progress {
+    font-size: 17px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .Portfoliowrapper {
+    flex-direction: column;
+  }
+  .portfolioImageContainer {
+    width: 100%;
+    padding: 0px 7px;
+    max-height: 300px;
+    object-fit: contain;
+    margin-top: 30px;
+  }
+  .PortfoliotextContainer {
+    transform: none !important;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+  }
+  .PortfoliotextContainer button {
+    font-size: 20px;
+  }
+  .contact {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+  }
+  .formContainer {
+    width: 100%;
+    line-height: 50px;
+    padding: 20px;
+  }
+  .contactTextContainer {
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    margin-top: 60px;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  .contactTextContainer h1 {
+    font-size: 35px;
+    line-height: unset;
+  }
+  input,
+  textarea {
+    padding: 10px;
+  }
+  form button {
+    padding: 10px;
+  }
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 1366px) {
+}
