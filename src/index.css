@@ -218,33 +218,44 @@ button:hover {
 }
 .portfolioImageContainer {
   flex: 1;
-  height: 50%;
 }
+
 .portfolioImageContainer img {
   height: 100%;
   width: 100%;
   border-radius: 5px;
-  object-fit: cover;
 }
 
 .PortfoliotextContainer {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 15px;
 }
 
 .PortfoliotextContainer h2 {
   font-size: 40px;
 }
+.technologies {
+  color: rgba(51, 255, 0, 0.842);
+  display: flex;
+  gap: 10px;
+  text-transform: capitalize;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
 .PortfoliotextContainer p {
   color: gray;
   font-size: 17px;
 }
-.PortfoliotextContainer button {
+.portfolioLinks {
+  margin-top: 15px;
+}
+.PortfoliotextContainer a {
   background-color: orange;
   border: none;
   border-radius: 10px;
+  color: black;
   padding: 10px;
   width: 200px;
 }
