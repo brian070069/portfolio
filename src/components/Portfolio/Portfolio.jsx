@@ -1,6 +1,7 @@
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import BetikaProject from "../../assets/betika.png";
 import QmelterProject from "../../assets/qmelter.png";
+import Admin from "../../assets/admin.png";
 import React, { useRef } from "react";
 
 const Projects = [
@@ -9,6 +10,8 @@ const Projects = [
     image: QmelterProject,
     title: "Food Ordering application",
     projectLink: "https://sansiroo.netlify.app/",
+    githubLink:
+      "https://github.com/brian070069/Yamz-Food-Ordering-Application.git",
     technology: ["Reactjs", "Javascript", "CSS3", "HTML5", "Restful-Apis"],
     description: `A fully responsive food ordering application that allows users to 
                  purchase there desired meal easily and delivered at there do steps.
@@ -22,6 +25,7 @@ const Projects = [
     id: 2,
     image: BetikaProject,
     title: "Betting Application",
+    githubLink: "https://github.com/brian070069/sports-betting-app.git",
     projectLink: "https://greatbets.netlify.app",
     technology: ["Reactjs", "Typescript", "taiwindcss", "Restful-Apis"],
     description: `
@@ -30,29 +34,20 @@ const Projects = [
        throughout the entire application while maintaining a great user experience overall
     `,
   },
+
   {
     id: 3,
-    image: "people.webp",
-    title: "Project",
-    projectLink: "https://greatbets.netlify.app",
-    technology: ["Reactjs", "Javascript", "css", "Html"],
-    description: ` Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, saepe quam
-      velit vitae et a cumque, quod omnis numquam laudantium harum nostrum eius.
-      Vel numquam aut eum veniam pariatur iste! Accusantium, architecto quis,
-      molestias harum earum mollitia error perferendis perspiciatis culpa
-      sapiente animi ut, quisquam nostrum quia in tempora nesciunt.`,
-  },
-  {
-    id: 4,
-    image: "people.webp",
-    title: "Project",
-    projectLink: "https://greatbets.netlify.app",
-    technology: ["Reactjs", "Javascript", "css", "Html"],
-    description: ` Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, saepe quam
-      velit vitae et a cumque, quod omnis numquam laudantium harum nostrum eius.
-      Vel numquam aut eum veniam pariatur iste! Accusantium, architecto quis,
-      molestias harum earum mollitia error perferendis perspiciatis culpa
-      sapiente animi ut, quisquam nostrum quia in tempora nesciunt.`,
+    image: Admin,
+    title: "Admin managent app",
+    projectLink: "https://admingatu.netlify.app",
+    githubLink: "https://github.com/brian070069/managment-application.git",
+    technology: ["Reactjs", "Javascript", "tailwind", "HTML5"],
+    description: `
+           The admin management application is fully responsive and user-friendly, offering
+            clear visual representations of data through charts Administrators can easily 
+            view and update user and product information, 
+            streamlining the management process.
+    `,
   },
 ];
 
@@ -112,7 +107,7 @@ const Portfolio = () => {
                             fontSize: "16px",
                           }}
                         >
-                          40 users Pay day
+                          22 users Pay day
                         </span>
                       </p>
                     ) : (
@@ -124,9 +119,19 @@ const Portfolio = () => {
                     <a
                       href={item.projectLink}
                       target="_blank"
+                      className="liveProjectlink"
                       rel="noopener noreferrer"
                     >
-                      See Project
+                      Live Project
+                    </a>
+                    <a
+                      href={item.githubLink}
+                      target="_blank"
+                      className="githubLink"
+                      rel="noopener noreferrer"
+                    >
+                      <img src="/skillsLogos/github.png" alt="" width={40} />
+                      <h4>Github Code</h4>
                     </a>
                   </div>
                 </motion.div>

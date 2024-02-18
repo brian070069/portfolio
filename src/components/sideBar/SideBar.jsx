@@ -8,7 +8,7 @@ const SideBar = () => {
 
   const variants = {
     open: {
-      clipPath: "circle(1200px at 50px 50px)",
+      clipPath: "circle(1200px at 45px 45px)",
       transition: {
         type: "spring",
         stifness: 400,
@@ -17,7 +17,7 @@ const SideBar = () => {
       },
     },
     closed: {
-      clipPath: "circle(30px at 50px 50px)",
+      clipPath: "circle(25px at 50px 50px)",
       transition: {
         type: "spring",
         stifness: 400,

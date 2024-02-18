@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import SideBar from "./sideBar/SideBar";
 
 const Navbar = () => {
+  const items = ["Homepage", "Skills", "Projects", "Contact"];
   return (
     <div className="navbar">
       <SideBar />
@@ -20,17 +21,17 @@ const Navbar = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <motion.a href="">
-            <img src="facebook.png" alt="facebook" />
+          <motion.a href="#HomePage">
+            <h4>Home</h4>
           </motion.a>
-          <motion.a href="">
-            <img src="dribbble.png" alt="dribble" />
+          <motion.a href="#Projects">
+            <h4>Projects</h4>
           </motion.a>
-          <motion.a href="">
-            <img src="youtube.png" alt="youtube" />
+          <motion.a href="#Skills">
+            <h4>Skills</h4>
           </motion.a>
-          <motion.a href="">
-            <img src="instagram.png" alt="instagram" />
+          <motion.a href="#Contact">
+            <h4>Contact</h4>
           </motion.a>
         </motion.div>
       </div>

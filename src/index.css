@@ -45,10 +45,12 @@ button:hover {
 }
 .social {
   display: flex;
-  gap: 15px;
+  gap: 25px;
 }
-.social a img {
-  width: 27px;
+.social a h4 {
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.5px;
 }
 /* sidebar */
 .sidebar {
@@ -250,15 +252,22 @@ button:hover {
 }
 .portfolioLinks {
   margin-top: 15px;
+  display: flex;
+  gap: 5px;
 }
-.PortfoliotextContainer a {
+.liveProjectlink,
+.githubLink {
   background-color: orange;
   border: none;
   border-radius: 10px;
   color: black;
-  padding: 10px;
-  width: 200px;
+  display: flex;
+  align-items: center;
+  padding: 1px 10px;
+  font-weight: 600;
+  width: fit-content;
 }
+
 /* contact */
 .contact {
   position: relative;
@@ -324,6 +333,54 @@ form button {
   z-index: 999;
 }
 
+/* skills */
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+.skillsHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+}
+.skillsHeader h4 {
+  color: orange;
+  font-size: 35px;
+  text-align: center;
+}
+.skillsHeader div {
+  background-color: white;
+  width: 240px;
+  height: 4px;
+}
+.skilsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+  max-width: 700px;
+  margin: 80px auto;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+}
+.skillLogo {
+  width: 60px;
+  height: 60px;
+}
+.skillLogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.skill h4 {
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
 @media (max-width: 738px) {
   .cursor,
   .wrapper span {
@@ -335,6 +392,9 @@ form button {
   }
   .bg {
     width: 200px;
+  }
+  .social {
+    display: none;
   }
   .links a {
     font-size: 30px;
@@ -422,6 +482,11 @@ form button {
   }
   form button {
     padding: 10px;
+  }
+  .skilsContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px auto;
+    gap: 30px;
   }
 }
 @media (max-width: 1024px) {

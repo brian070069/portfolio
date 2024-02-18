@@ -64,8 +64,8 @@ const Contact = () => {
       </motion.div>
       <div className="formContainer">
         <motion.form ref={formRef} onSubmit={sendEmail}>
-          <input type="text" required placeholder="Name" name="name" />
-          <input type="email" required placeholder="Email" name="email" />
+          <input type="text" required placeholder="Your Name" name="name" />
+          <input type="email" required placeholder="Your Email" name="email" />
           <textarea rows="8" placeholder="message" name="message"></textarea>
           <button disabled={isLoading}>
             {isLoading ? "Sending......" : "Send Message"}
