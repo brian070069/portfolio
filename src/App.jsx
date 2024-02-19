@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import Hero from "./components/hero/Hero";
-import Parallax from "./components/parallax/parallax";
+// import Parallax from "./components/parallax/parallax";
 import { Toaster, toast } from "sonner";
 import Cursor from "./cursor/Cursor";
 
