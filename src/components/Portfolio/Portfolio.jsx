@@ -107,8 +107,9 @@ const Portfolio = () => {
                             fontSize: "16px",
                           }}
                         >
-                          22 users Pay day
-                        </span>
+                          70+ users Pay day
+                        </span>{" "}
+                        improving there sales
                       </p>
                     ) : (
                       item.description

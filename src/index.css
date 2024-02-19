@@ -60,6 +60,7 @@ button:hover {
   justify-content: center;
   color: black;
   position: fixed;
+  display: none;
   z-index: 99;
 }
 .bg {
@@ -103,12 +104,20 @@ button:hover {
   position: relative;
   background: linear-gradient(180deg, #0c0c1d, #111132);
 }
-.imageContainer {
-  height: 100vh;
-  width: 70%;
-  position: absolute;
-  right: 0;
-  top: 0;
+.aboutMe_info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.aboutMe_info h5 {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(212, 212, 212, 0.76);
+}
+.aboutMe_info p {
+  color: rgba(212, 212, 212, 0.76);
+  font-size: 16px;
 }
 .textContainer {
   width: 50%;
@@ -116,7 +125,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 15px;
+  gap: 0px;
   z-index: 50;
 }
 .textContainer h2 {
@@ -125,10 +134,13 @@ button:hover {
   letter-spacing: 8px;
 }
 .textContainer h1 {
-  font-size: 50px;
+  font-size: 40px;
 }
 .textContainer img {
   width: 40px;
+}
+.buttons {
+  padding: 30px 0px;
 }
 .buttons a {
   padding: 10px;
@@ -147,6 +159,19 @@ button:hover {
   white-space: nowrap;
   color: #ffffff09;
   width: 50%;
+}
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  object-fit: contain;
+}
+.imageContainer {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  right: 14%;
+  top: 50px;
 }
 /* parallax */
 .parallax {
@@ -236,7 +261,7 @@ button:hover {
 }
 
 .PortfoliotextContainer h2 {
-  font-size: 40px;
+  font-size: 30px;
 }
 .technologies {
   color: rgba(51, 255, 0, 0.842);
@@ -381,7 +406,10 @@ form button {
   letter-spacing: 1px;
   font-weight: 500;
 }
-@media (max-width: 738px) {
+@media (max-width: 1000px) {
+  .sidebar {
+    display: flex;
+  }
   .cursor,
   .wrapper span {
     display: none;
@@ -411,10 +439,12 @@ form button {
     text-align: center;
   }
   .imageContainer {
-    height: 50%;
-    width: 100%;
+    height: 250px;
+    width: 250px;
     top: unset;
-    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 20px;
   }
   .imageContainer img {
     width: 100%;
@@ -487,6 +517,9 @@ form button {
     grid-template-columns: 1fr 1fr 1fr;
     margin: 50px auto;
     gap: 30px;
+  }
+  .aboutMe_info p {
+    display: none;
   }
 }
 @media (max-width: 1024px) {

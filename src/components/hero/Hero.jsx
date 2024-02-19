@@ -47,15 +47,25 @@ const Hero = () => {
           animate="animate"
           variants={textVariants}
         >
-          <motion.h2 variants={textVariants}>Brian Gatundu</motion.h2>
-          <motion.h1 variants={textVariants}>Frontend Developer</motion.h1>
-          <motion.div className="buttons" variants={textVariants}>
-            <motion.a variants={textVariants} href="#Projects">
-              My Work
-            </motion.a>
-            <motion.a variants={textVariants} href="#Contact">
-              Contact Me
-            </motion.a>
+          <motion.div className="aboutMe_info">
+            <motion.h5>Hello I am ,</motion.h5>
+            <motion.h2 variants={textVariants}>Brian Gatundu</motion.h2>
+            <motion.h1 variants={textVariants}>
+              Frontend-React Developer
+            </motion.h1>
+            <motion.p>
+              Through React , I create captivating digital experiences that
+              drive engagement and boost business success. Let's collaborate to
+              elevate your brand together.
+            </motion.p>
+            <motion.div className="buttons" variants={textVariants}>
+              <motion.a variants={textVariants} href="#Projects">
+                My Work
+              </motion.a>
+              <motion.a variants={textVariants} href="#Contact">
+                Contact Me
+              </motion.a>
+            </motion.div>
           </motion.div>
           <motion.img
             src="scroll.png"
@@ -64,17 +74,18 @@ const Hero = () => {
             animate="scrollButton"
           />
         </motion.div>
+        <motion.div
+          className="slidingTextContainer"
+          variants={SliderVariants}
+          initial="initial"
+          animate="animate"
+        >
+          React Frontend Developer
+        </motion.div>
       </div>
-      <motion.div
-        className="slidingTextContainer"
-        variants={SliderVariants}
-        initial="initial"
-        animate="animate"
-      >
-        React Frontend Developer
-      </motion.div>
+
       <div className="imageContainer">
-        <img src="profile.png" alt="" />
+        <img src="profile.jpg" alt="" />
       </div>
     </div>
   );
