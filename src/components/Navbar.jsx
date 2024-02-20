@@ -15,6 +15,20 @@ const Navbar = () => {
         >
           Gatu Dev
         </motion.span>
+        <motion.div className="div" style={{ display: "flex", gap: "10px" }}>
+          <a
+            href="https://www.linkedin.com/in/brian-mwema-009589262/"
+            target="_blank"
+          >
+            <img src="linkedIn.png" alt="" width={38} />
+          </a>
+          <a
+            href="https://github.com/brian070069?tab=repositories"
+            target="_blank"
+          >
+            <img src="/skillsLogos/github.png" alt="" width={40} />
+          </a>
+        </motion.div>
         <motion.div
           className="social"
           initial={{ opacity: 0 }}
