@@ -48,6 +48,14 @@ const App = () => {
       name: "Tailwind",
       logo: "/skillsLogos/tailwind.png",
     },
+    {
+      name: "Nodejs",
+      logo: "/skillsLogos/node.png",
+    },
+    {
+      name: "Mongodb",
+      logo: "/skillsLogos/mongodb.png",
+    },
   ];
 
   console.log(skills);

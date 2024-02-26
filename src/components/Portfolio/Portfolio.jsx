@@ -2,6 +2,7 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import BetikaProject from "../../assets/betika.png";
 import QmelterProject from "../../assets/qmelter.png";
 import Admin from "../../assets/admin.png";
+import AI from "../../assets/AI.png";
 import React, { useRef } from "react";
 
 const Projects = [
@@ -23,6 +24,27 @@ const Projects = [
   },
   {
     id: 2,
+    image: AI,
+    title: "Saas Photo AI",
+    projectLink: "https://illusory.vercel.app/",
+    githubLink: "https://github.com/brian070069/illusory.git",
+    technology: [
+      "Nextjs",
+      "Typescript",
+      "tailwindcss",
+      "HTML5",
+      "cloudinary AI",
+      "mongodb",
+    ],
+    description: `A SaaS Like application designed for personalized image editing,
+     where users can tailor their photos to perfection. With seamless integration of Stripe for secure
+      payments and Clerk for reliable authentication, our platform prioritizes both convenience and security. 
+      Unleash your creativity confidently with our intuitive interface and advanced editing tools,
+       whether it's for personal projects or professional endeavors  .
+    `,
+  },
+  {
+    id: 3,
     image: BetikaProject,
     title: "Betting Application",
     githubLink: "https://github.com/brian070069/sports-betting-app.git",
@@ -36,7 +58,7 @@ const Projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     image: Admin,
     title: "Admin managent app",
     projectLink: "https://admingatu.netlify.app",
@@ -86,7 +108,7 @@ const Portfolio = () => {
 
                   <div className="technologies">
                     {item.technology.map((tech) => {
-                      return <span>{tech}</span>;
+                      return <span style={{ whiteSpace: "wrap" }}>{tech}</span>;
                     })}
                   </div>
 
@@ -99,16 +121,14 @@ const Portfolio = () => {
                         a mobile payment called M-PESA that allows user to pay
                         through mobile money making it easy and safe to make
                         transaction The app is currently being USED by a local
-                        hotel and the app has approximately
+                        hotel
                         <span
                           style={{
                             color: "red",
                             marginLeft: "10px",
                             fontSize: "16px",
                           }}
-                        >
-                          30+ users Pay day
-                        </span>{" "}
+                        ></span>{" "}
                       </p>
                     ) : (
                       item.description

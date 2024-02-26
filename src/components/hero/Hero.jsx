@@ -50,13 +50,11 @@ const Hero = () => {
           <motion.div className="aboutMe_info">
             <motion.h5>Hello I am ,</motion.h5>
             <motion.h2 variants={textVariants}>Brian Gatundu</motion.h2>
-            <motion.h1 variants={textVariants}>
-              Frontend-React Developer
-            </motion.h1>
+            <motion.h1 variants={textVariants}>Full-Stack Developer</motion.h1>
             <motion.p>
-              Through React , I create captivating digital experiences that
-              drive engagement and boost business success. Let's collaborate to
-              elevate your brand together.
+              Looking to boost your brand's online presence and drive business
+              success? Let's team up to elevate your brand to new heights.
+              Together, we'll create solutions that make a lasting impact
             </motion.p>
             <motion.div className="buttons" variants={textVariants}>
               <motion.a variants={textVariants} href="#Projects">
@@ -80,7 +78,7 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          React Frontend Developer
+          Full Stack Developer
         </motion.div>
       </div>
 

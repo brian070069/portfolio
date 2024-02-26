@@ -17,7 +17,7 @@ const Navbar = () => {
         </motion.span>
         <motion.div className="div" style={{ display: "flex", gap: "10px" }}>
           <a
-            href="https://www.linkedin.com/in/brian-mwema-009589262/"
+            href="https://www.linkedin.com/in/brian-gatundu-009589262/"
             target="_blank"
           >
             <img src="linkedIn.png" alt="" width={38} />
