@@ -167,11 +167,11 @@ button:hover {
   object-fit: contain;
 }
 .imageContainer {
-  height: 400px;
-  width: 400px;
+  height: 230px;
+  width: 230px;
   position: absolute;
-  right: 14%;
-  top: 50px;
+  right: 25%;
+  top: 100px;
 }
 /* parallax */
 .parallax {
@@ -439,8 +439,8 @@ form button {
     text-align: center;
   }
   .imageContainer {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     top: unset;
     right: 50%;
     transform: translateX(50%);
